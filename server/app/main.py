@@ -12,9 +12,5 @@ class Item(BaseModel):
 def read_root():
     return {"Hello" : "World"}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: str, q: str | None = None, sample: bool = False):
-    item = {"item_id": item_id}
-    item.update({"q": q})
-    return {item}
-
+@app.get("/")
+def 

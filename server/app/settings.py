@@ -1,0 +1,1 @@
+from pydatnic-settings
